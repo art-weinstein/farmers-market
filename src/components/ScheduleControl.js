@@ -22,11 +22,11 @@ class ScheduleControl extends React.Component {
     let currentlyVisibleState = null;
     let buttonText = null;
     if (this.state.formVisibleOnPage){
-      currentlyVisibleState = <ProduceList/>;
-      buttonText = "View seasonal produce";
-    } else {
-      currentlyVisibleState = <ScheduleList/>;
+      currentlyVisibleState = <ProduceList />;
       buttonText = "Back to schedule";
+    } else {
+      currentlyVisibleState = <ScheduleList />;
+      buttonText = "View seasonal produce";
     }
     return (
       <React.Fragment>

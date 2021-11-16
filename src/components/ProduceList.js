@@ -276,7 +276,7 @@ function ProduceList(){
       {mainProduceList.map((produce, index) =>
       <Produce month={produce.month}
         selection = {produce.selection}
-        key={index}/>
+        key = {index}/>
       )}
     </React.Fragment>
   );
