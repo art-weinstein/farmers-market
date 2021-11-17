@@ -26,12 +26,12 @@ class ScheduleControl extends React.Component {
       buttonText = "Back to schedule";
     } else {
       currentlyVisibleState = <ScheduleList />;
-      buttonText = "View seasonal produce";
+      buttonText = "View Seasonal Produce";
     }
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <button className="btn btn-dark" onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
       );
     }
